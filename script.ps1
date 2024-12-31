@@ -6,10 +6,10 @@ $session.Cookies.Add((New-Object System.Net.Cookie("_ga", "GA1.1.1557434277.1735
 $session.Cookies.Add((New-Object System.Net.Cookie("_ga_GZ7WM3DRRS", "GS1.1.1735666722.1.0.1735666738.0.0.0", "/", ".caltech.edu")))
 $session.Cookies.Add((New-Object System.Net.Cookie("_ga_7B1M78W1QZ", "GS1.1.1735666722.1.0.1735666738.0.0.0", "/", ".caltech.edu")))
 
-$i=1
+$i=0
 for(;$i -le 122;$i++)
 {
-  $k = $arr[$i-1]
+  $k = $arr[$i]
     Invoke-WebRequest -UseBasicParsing -Uri "https://www.feynmanlectures.caltech.edu/protectedaudio/mp4/$k" `
 -WebSession $session `
 -Headers @{
